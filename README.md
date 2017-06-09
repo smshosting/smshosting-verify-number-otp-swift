@@ -64,3 +64,5 @@ SmshostingVerify.verifyWithIdAndCode(verifyId: verifyId, verifyCode: pinTextFiel
       }
    })
 ```
+## MORE...
+Smshosting OTP API documentation: https://www.smshosting.it/it/docs/sms-rest-api/sms-otp
