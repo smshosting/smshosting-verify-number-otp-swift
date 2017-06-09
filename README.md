@@ -45,16 +45,16 @@ SmshostingVerify.sendPinWithPhoneNumberAndText(phoneNumber: completeNumber, text
 SmshostingVerify.verifyWithIdAndCode(verifyId: verifyId, verifyCode: pinTextField.text!, completion: {
 (result: [String:Any]) in
    DispatchQueue.main.async {
-      if(result["errorCode"] == nil){
-      //Request Done
-         if(result["verify_status"] != nil){
-               let statusString:String = result["verify_status"] as! String
-               if(statusString == "VERIFIED"){
-                  //Verification done!                      
-               }
-               else{
-                  //Verification failed, entered pin is not valid
-               }
+         if(result["errorCode"] == nil){
+            //Request Done
+            if(result["verify_status"] != nil){
+                  let statusString:String = result["verify_status"] as! String
+                  if(statusString == "VERIFIED"){
+                     //Verification done!                      
+                  }
+                  else{
+                     //Verification failed, entered pin is not valid
+                  }
             }
          }
          else{
