@@ -12,6 +12,7 @@
 		C4EFA8C61ED833E20004430C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFA8C51ED833E20004430C /* AppDelegate.swift */; };
 		C4EFA8C81ED833E20004430C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFA8C71ED833E20004430C /* TestViewController.swift */; };
 		C4EFA8CD1ED833E20004430C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EFA8CC1ED833E20004430C /* Assets.xcassets */; };
+		C4FDA0FF1EEAB8A4001BD69F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C4FDA0FE1EEAB8A4001BD69F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4EFA8C71ED833E20004430C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C4EFA8CC1ED833E20004430C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4EFA8D11ED833E20004430C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FDA0FE1EEAB8A4001BD69F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		C4EFA8B91ED833E20004430C = {
 			isa = PBXGroup;
 			children = (
+				C4FDA0FE1EEAB8A4001BD69F /* README.md */,
 				C46963D21EDC0C3C001C36B1 /* SmshostingVerify */,
 				C4EFA8C41ED833E20004430C /* SmshPinValidationTest */,
 				C4EFA8C31ED833E20004430C /* Products */,
@@ -153,6 +156,7 @@
 			files = (
 				C4EFA8C81ED833E20004430C /* TestViewController.swift in Sources */,
 				C437B7FE1EDD71E6006497E7 /* LoadingView.swift in Sources */,
+				C4FDA0FF1EEAB8A4001BD69F /* README.md in Sources */,
 				C4EFA8C61ED833E20004430C /* AppDelegate.swift in Sources */,
 				C46963D41EDC2457001C36B1 /* SmshostingVerify.swift in Sources */,
 			);
