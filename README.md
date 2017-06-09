@@ -28,38 +28,39 @@ You can obtain your AUTH_KEY and AUTH_SECRET by logging into your [smshosting.it
 ```Swift
 SmshostingVerify.sendPinWithPhoneNumberAndText(phoneNumber: completeNumber, text:"SMSHosting code ${verify_code}", sandbox:false, completion: {
 (result: [String:Any]) in
-DispatchQueue.main.async {
-if(result["errorCode"] == nil){
-//Request Done
-//Pin sent, do what you want...
-}
-else{
-//Request Error
-//Pin NOT sent, handle error...
-}
-}
-})
+   DispatchQueue.main.async {
+      if(result["errorCode"] == nil){
+            //Request Done
+            //Pin sent, do what you want...
+         }
+         else{
+            //Request Error
+            //Pin NOT sent, handle error...
+         }
+      }
+   })
 ```
 ### Verify Pin
 ```Swift
 SmshostingVerify.verifyWithIdAndCode(verifyId: verifyId, verifyCode: pinTextField.text!, completion: {
 (result: [String:Any]) in
-DispatchQueue.main.async {
-if(result["errorCode"] == nil){
-//Request Done
-if(result["verify_status"] != nil){
-let statusString:String = result["verify_status"] as! String
-if(statusString == "VERIFIED"){
-//Verification done!                      }
-else{
-//Verification failed, entered pin is not valid
-}
-}
-}
-else{
-//Request Error
-//Verification failed, handle error...
-}
-}
-})
+   DispatchQueue.main.async {
+      if(result["errorCode"] == nil){
+      //Request Done
+         if(result["verify_status"] != nil){
+               let statusString:String = result["verify_status"] as! String
+               if(statusString == "VERIFIED"){
+                  //Verification done!                      
+               }
+               else{
+                  //Verification failed, entered pin is not valid
+               }
+            }
+         }
+         else{
+            //Request Error
+            //Verification failed, handle error...
+         }
+      }
+   })
 ```
