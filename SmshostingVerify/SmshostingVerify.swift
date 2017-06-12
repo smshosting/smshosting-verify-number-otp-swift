@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SystemConfiguration
 import UIKit
 
 class SmshostingVerify: NSObject {
@@ -113,7 +112,7 @@ class SmshostingVerify: NSObject {
             config.httpAdditionalHeaders = ["Authorization" : authString]
             let session = URLSession(configuration: config)
             
-            var url:String = SmshostingVerify.urlVerifyCode + "?verify_id=" + verifyId + "&verify_code=" + verifyCode
+            let url:String = SmshostingVerify.urlVerifyCode + "?verify_id=" + verifyId + "&verify_code=" + verifyCode
             
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "GET"
@@ -157,7 +156,7 @@ class SmshostingVerify: NSObject {
         //Get Country Codes
         
         
-        var url:String = SmshostingVerify.countryCodesList
+        let url:String = SmshostingVerify.countryCodesList
         
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"

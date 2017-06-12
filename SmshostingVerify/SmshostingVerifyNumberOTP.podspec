@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SmshostingVerifyNumberOTP"
-  s.version      = "0.0.1"
+  s.version      = "1.0"
   s.summary      = "Send pin via sms to verify a mobile phone number"
 
   # This description is used to generate tags and improve search results.
@@ -62,8 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/smshosting/smshosting-verify-number-otp-swift.git", :commit => "5ade00a28a22218a3de11b70b81fe148a9ceb4ba" }
+  s.source       = { :git => "https://github.com/smshosting/smshosting-verify-number-otp-swift.git", :tag => "v1.0"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +88,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "*.*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = 'SmshostingVerify/SmshostingVerify.swift'
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
