@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SmshostingVerifyNumberOTP"
-  s.version      = "1.0"
+  s.version      = "1.01"
   s.summary      = "Send pin via sms to verify a mobile phone number"
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/smshosting/smshosting-verify-number-otp-swift.git", :tag => "v1.0"}
+  s.source       = { :git => "https://github.com/smshosting/smshosting-verify-number-otp-swift.git", :tag => "v1.01"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = '**/*.*'
+  s.source_files  = '*.*'
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
