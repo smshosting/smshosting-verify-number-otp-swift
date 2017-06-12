@@ -142,7 +142,7 @@ class TestViewController: UIViewController,UITextFieldDelegate,UIPickerViewDeleg
                     
                     if(result["verify_status"] != nil){
                         
-                        var statusString:String = result["verify_status"] as! String
+                        let statusString:String = result["verify_status"] as! String
                         
                         if(statusString == "VERIFIED"){
                             title = "Done!"
@@ -281,7 +281,7 @@ class TestViewController: UIViewController,UITextFieldDelegate,UIPickerViewDeleg
             var i:Int = 0
             for country:[String:Any] in self.countryCodesList {
                 
-                var code:Int = country["prefix"] as! Int
+                let code:Int = country["prefix"] as! Int
                 if(code == 39){
                     self.countryPicker.selectRow(i, inComponent: 0, animated: false)
                 }
