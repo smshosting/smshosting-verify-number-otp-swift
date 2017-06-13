@@ -9,8 +9,6 @@ How to verify a phone number:
 2. The user inserts pin into application
 3. SmshostingVerify check that the PIN entered by user is the one you sent
 
-## INSTALLATION
-### CocoaPods
 # Smshosting Verify OTP
 You can use Smshosting Verify to:
 * check that a person has access to a specific phone number
